@@ -2,39 +2,43 @@ import React from "react";
 
 function Footer() {
     return (
-        <footer className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white">
+        <footer className="bg-gradient-to-r from-gray-900 via-purple-950 to-black text-gray-300">
             <div className="max-w-7xl mx-auto py-10 px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 className="text-2xl font-bold">MEGA BLOG</h3>
-                    <p className="text-sm mt-2">© 2025 HackHatch. All Rights Reserved.</p>
+                    <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
+                        BitLogue
+                    </h3>
+                    <p className="text-sm mt-2 text-gray-400">
+                        © 2025 BitLogue. All Rights Reserved.
+                    </p>
                 </div>
 
                 <div>
-                    <h4 className="text-lg font-semibold mb-2">Company</h4>
+                    <h4 className="text-lg font-semibold mb-2 text-white">Company</h4>
                     <ul className="space-y-1 text-sm">
-                        <li><a href="#" className="hover:underline">Features</a></li>
-                        <li><a href="#" className="hover:underline">Pricing</a></li>
-                        <li><a href="#" className="hover:underline">Affiliate Program</a></li>
-                        <li><a href="#" className="hover:underline">Press Kit</a></li>
+                        <li><a href="#" className="hover:text-purple-400 transition-colors">Features</a></li>
+                        <li><a href="#" className="hover:text-purple-400 transition-colors">Pricing</a></li>
+                        <li><a href="#" className="hover:text-purple-400 transition-colors">Affiliate Program</a></li>
+                        <li><a href="#" className="hover:text-purple-400 transition-colors">Press Kit</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 className="text-lg font-semibold mb-2">Support</h4>
+                    <h4 className="text-lg font-semibold mb-2 text-white">Support</h4>
                     <ul className="space-y-1 text-sm">
-                        <li><a href="#" className="hover:underline">Account</a></li>
-                        <li><a href="#" className="hover:underline">Help</a></li>
-                        <li><a href="#" className="hover:underline">Contact Us</a></li>
-                        <li><a href="#" className="hover:underline">Customer Support</a></li>
+                        <li><a href="#" className="hover:text-purple-400 transition-colors">Account</a></li>
+                        <li><a href="#" className="hover:text-purple-400 transition-colors">Help</a></li>
+                        <li><a href="#" className="hover:text-purple-400 transition-colors">Contact Us</a></li>
+                        <li><a href="#" className="hover:text-purple-400 transition-colors">Customer Support</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 className="text-lg font-semibold mb-2">Legals</h4>
+                    <h4 className="text-lg font-semibold mb-2 text-white">Legals</h4>
                     <ul className="space-y-1 text-sm">
-                        <li><a href="#" className="hover:underline">Terms & Conditions</a></li>
-                        <li><a href="#" className="hover:underline">Privacy Policy</a></li>
-                        <li><a href="#" className="hover:underline">Licensing</a></li>
+                        <li><a href="#" className="hover:text-purple-400 transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" className="hover:text-purple-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" className="hover:text-purple-400 transition-colors">Licensing</a></li>
                     </ul>
                 </div>
             </div>

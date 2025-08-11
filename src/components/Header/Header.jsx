@@ -17,8 +17,7 @@ function Header() {
   ];
 
   return (
-    <header className="bg-gradient-to-r from-purple-600 via-pink-500 to-pink-400
- shadow-md sticky top-0 z-50">
+    <header className="bg-gradient-to-r from-gray-900 via-purple-950 to-black shadow-md sticky top-0 z-50 border-b border-purple-800/40">
       <Container>
         <nav className="flex items-center py-4">
           <div className="mr-6 cursor-pointer">
@@ -36,8 +35,8 @@ function Header() {
                       className={`inline-block px-5 py-2 rounded-full font-semibold transition duration-300
                         ${
                           location.pathname === item.slug
-                            ? 'bg-white text-blue-700 shadow-md'
-                            : 'text-white hover:bg-white hover:text-blue-700'
+                            ? 'bg-purple-700 text-white shadow-md'
+                            : 'text-purple-300 hover:bg-purple-800 hover:text-white'
                         }`}
                     >
                       {item.name}

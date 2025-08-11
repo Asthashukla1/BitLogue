@@ -6,7 +6,7 @@ function Logo({ width = "100px" }) {
       style={{ width }}
       className="font-bold text-2xl text-white select-none"
     >
-      MEGA BLOG
+      BitLogue
     </div>
   );
 }

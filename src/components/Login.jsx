@@ -27,30 +27,30 @@ function Login() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4">
-      <div className="mx-auto w-full max-w-md bg-white rounded-xl p-8 shadow-md border border-gray-200">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-purple-950 to-black px-4">
+      <div className="mx-auto w-full max-w-md bg-gray-900/60 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-purple-800/40">
         <div className="mb-4 flex justify-center">
           <span className="w-24">
             <Logo width="100%" />
           </span>
         </div>
 
-        <h2 className="text-center text-2xl font-bold leading-tight text-gray-800">
+        <h2 className="text-center text-2xl font-bold leading-tight text-white">
           Sign in to your account
         </h2>
 
-        <p className="mt-2 text-center text-sm text-gray-600">
+        <p className="mt-2 text-center text-sm text-gray-400">
           Don&apos;t have an account?&nbsp;
           <Link
             to="/signup"
-            className="font-medium text-blue-600 hover:underline transition"
+            className="font-medium text-purple-400 hover:text-purple-300 transition"
           >
             Sign Up
           </Link>
         </p>
 
         {error && (
-          <p className="text-red-600 mt-6 text-center font-medium">{error}</p>
+          <p className="text-red-500 mt-6 text-center font-medium">{error}</p>
         )}
 
         <form onSubmit={handleSubmit(login)} className="mt-8 space-y-6">
@@ -58,6 +58,7 @@ function Login() {
             label="Email:"
             placeholder="Enter your email"
             type="email"
+            className="bg-gray-800 border-gray-700 text-white placeholder-gray-500"
             {...register("email", {
               required: "Email is required",
               pattern: {
@@ -70,12 +71,16 @@ function Login() {
             label="Password:"
             placeholder="Enter your password"
             type="password"
+            className="bg-gray-800 border-gray-700 text-white placeholder-gray-500"
             {...register("password", {
               required: "Password is required",
             })}
           />
 
-          <Button type="submit" className="w-full">
+          <Button
+            type="submit"
+            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:from-purple-600 hover:to-pink-600 transition-all"
+          >
             Sign in
           </Button>
         </form>

@@ -17,14 +17,15 @@ function LogoutBtn() {
       onClick={logoutHandler}
       className="
         px-5 py-2
-        bg-pink-500  text-white font-semibold
+        bg-gray-900
+        text-white font-semibold
         rounded-full
-        hover:bg-pink-600
+        hover:bg-purple-700
         transition
         duration-300
         shadow-md
         focus:outline-none
-        focus:ring-2 focus:ring-red-400
+        focus:ring-2 focus:ring-purple-600
       "
     >
       Logout

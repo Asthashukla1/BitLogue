@@ -15,13 +15,13 @@ function Home() {
 
     if (posts.length === 0) {
         return (
-            <div className="w-full py-16 bg-white text-center">
+            <div className="w-full py-16 bg-gradient-to-br from-gray-900 via-purple-950 to-black text-center text-gray-100">
                 <Container>
                     <div className="max-w-2xl mx-auto">
-                        <h1 className="text-3xl font-extrabold text-gray-800 mb-4">
+                        <h1 className="text-3xl font-extrabold mb-4">
                             No posts found
                         </h1>
-                        <p className="text-gray-500 text-lg">
+                        <p className="text-gray-400 text-lg">
                             Login to view or create new posts and join the discussion.
                         </p>
                     </div>
@@ -31,19 +31,19 @@ function Home() {
     }
 
     return (
-    <div className="w-full min-h-[calc(100vh-64px)] py-16 bg-gradient-to-br from-purple-50 via-pink-50 to-white">
-        <Container>
-            <h1 className="text-4xl font-bold text-gray-800 mb-12 text-center tracking-tight">
-                Explore Posts
-            </h1>
-            <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                {posts.map((post) => (
-                    <PostCard key={post.$id} {...post} />
-                ))}
-            </div>
-        </Container>
-    </div>
-)
+        <div className="w-full min-h-[calc(100vh-64px)] py-16 bg-gradient-to-br from-gray-900 via-purple-950 to-black text-gray-100">
+            <Container>
+                <h1 className="text-4xl font-bold mb-12 text-center tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
+                    Explore Posts
+                </h1>
+                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    {posts.map((post) => (
+                        <PostCard key={post.$id} {...post} />
+                    ))}
+                </div>
+            </Container>
+        </div>
+    )
 }
 
 export default Home
